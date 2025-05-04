@@ -4,9 +4,11 @@ const transpoter = require("./services/transporter");
 // const sendMail = require("./services/sendMail");
 const errorhanddler = require("./middlewell/errorHandler");
 const connectDb = require("./config/connectDb");
+const cors = require("cors")
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 
 app.listen(3001, () => {
