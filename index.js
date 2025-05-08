@@ -33,6 +33,7 @@ app.get("/", (req, res, next) => {
 
 // Router
 const userRouter = require("./route/userRoute");
+const productRouter = require("./route/productRouter");
 
 
 
@@ -41,6 +42,7 @@ const userRouter = require("./route/userRoute");
 
 // use router
 app.use(userRouter)
+app.use(productRouter)
 
 
 
